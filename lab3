@@ -1,0 +1,27 @@
+from data_structures import Stack, Queue
+
+
+# Stack
+stack: Stack[int] = Stack()
+
+stack.push(10)
+stack.push(20)
+stack.push(30)
+
+print("Stack:", stack.items)
+print("Top element:", stack.peek())
+print("Popped:", stack.pop())
+print("Stack after pop:", stack.items)
+
+
+# Queue
+queue: Queue[str] = Queue()
+
+queue.enqueue("Alice")
+queue.enqueue("Bob")
+queue.enqueue("Charlie")
+
+print("\nQueue:", queue.items)
+print("Front element:", queue.front())
+print("Dequeued:", queue.dequeue())
+print("Queue after dequeue:", queue.items)
